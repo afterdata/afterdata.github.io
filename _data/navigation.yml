@@ -1,0 +1,11 @@
+links:
+- name: Eventos
+  link: /events/
+- name: Vagas
+  link: /jobs/
+- name: Membros
+  link: /members/
+- name: Blog
+  link: /blog/
+- name: Financeiro
+  link: /finance/

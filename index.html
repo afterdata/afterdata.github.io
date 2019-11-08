@@ -1,0 +1,66 @@
+---
+title: Página Inicial
+---
+
+<section class="hero diagonal" style="background: #222">
+	<div class="container">
+
+		<p class="subtext editable">
+			Estamos buscando em toda a comunidade profissionais e entusiastas de Data Science para concretizar uma comunidade que busca promover conhecimento. Nossas primeiras ações são Meetups e Divulgação de Vagas.
+		</p>
+
+	</div>
+</section>
+
+<section class="diagonal" style="background: #e9e9ea">
+	<div class="container halves">
+		<div style="color: #121648;">
+			<h3 class="editable">Eventos</h3>
+			<p class="editable">
+				Estamos organizando pequenos eventos conectando grandes pessoas! Procure saber mais de nossa comunidade e acompanhe os eventos.
+			</p>
+			<p class="editable"><strong><a href="{{ site.baseurl }}/events/">Acompanhar eventos &rarr;</a></strong></p>
+		</div>
+		<div>
+			<ul class="image-grid">
+				{% for event in site.events limit: 1 %}
+					<li><a href="{{ site.baseurl }}{{ event.url }}"><img src="{% include relative-src.html src=event.image_path %}"></a></li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>
+
+<section class="diagonal" style="background: #222">
+	<div class="container halves">
+		<div style="color: white;">
+			<h3 class="editable">Vagas</h3>
+			<p class="editable" style="color: white;">
+				Uma boa comunidade é formada de bons profissionais e boas empresas em sincronia. O AfterData apoia e promove isso!
+			</p>
+			<p class="editable"><strong><a href="{{ site.baseurl }}/events/" style="color: white !important;">Acompanhar vagas &rarr;</a></strong></p>
+		</div>
+		<div>
+			<ul class="image-grid">
+				{% for job in site.jobs limit: 1 %}
+					<li><a href="{{ site.baseurl }}{{ event.url }}"><img src="{% include relative-src.html src=event.image_path %}"></a></li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>
+
+<section class="diagonal alternate" style="background: #a8a8a8">
+	<div class="container halves">
+		<div>
+			<ul class="image-list">
+				<li><img src="{{ site.baseurl }}/images/pessoas.jpg" width="500"></li>
+			</ul>
+		</div>
+		<div style="color: black">
+			<h3 class="editable">Código de Conduta</h3>
+			<p class="editable" style="color: black">O AfterData é uma comunidade dedicada a oferecer um ambiente livre de assédio para todos, independentemente do sexo, identidade de gênero e expressão, idade, orientação sexual, deficiência, aparência física, tamanho corporal, cor de pele, etnia, religião (ou falta dela), tamanho do corpo, nacionalidade, ideologia política, experiência em computação e suas tecnologias (ou a falta dela).</p>
+			<p class="editable"><strong><a target="_blank" href="https://github.com/afterdata/conduta">Código na Íntegra &rarr;</a></strong></p>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,25 @@
+---
+title: Eventos
+heading: Eventos
+subtitle: Participe da comunidade, aqui estaremos divulgando todos os nossos eventos.
+---
+
+<section class="diagonal" style="background: #e9e9ea">
+	<div class="container">
+		<ul class="image-grid">
+			{% for event in site.events %}
+				<li>
+					<a href="{{ site.baseurl }}{{ event.url }}">
+						<img src="{% include relative-src.html src=event.image_path %}" alt="{{ event.name }}">
+						<div class="details">
+							<div class="name">{{ event.name }}</div>
+							<div class="position">{{ event.subtitle }}</div>
+						</div>
+					</a>
+				</li>
+			{% endfor %}
+			<li class="filler"></li>
+			<li class="filler"></li>
+		</ul>
+	</div>
+</section>
