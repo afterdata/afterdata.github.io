@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{% assign jobs = site.pages | where: "path", "jobs.html" | first %}
+
+<section class="hero diagonal" style="background: #222">
+	<div class="container">
+		{% if events.heading %}
+		<h2><a href="{{ site.baseurl }}/events/">{{ jobs.heading }}</a> / {{ page.title | capitalize }}</h2>
+		{% endif %}
+		{% if page.subtitle %}
+			<p class="subtext">{{ page.subtitle }}</p>
+		{% endif %}
+	</div>
+</section>
+
+<section class="diagonal">
+	<div class="container">
+		<p><img src="{% include relative-src.html src=page.image_path %}" class="screenshot"></p>
+		<div>
+			{{ content }}
+		</div>
+		<p><a href="{{ page.external_url }}">Ver {{ page.title }} &rarr;</a></p>
+	</div>
+</section>

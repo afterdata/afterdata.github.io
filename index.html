@@ -39,12 +39,13 @@ title: Página Inicial
 			<p class="editable" style="color: white;">
 				Uma boa comunidade é formada de bons profissionais e boas empresas em sincronia. O AfterData apoia e promove isso!
 			</p>
-			<p class="editable"><strong><a href="{{ site.baseurl }}/events/" style="color: white !important;">Acompanhar vagas &rarr;</a></strong></p>
+			<p class="editable"><strong><a href="{{ site.baseurl }}/jobs/" style="color: white !important;">Acompanhar vagas &rarr;</a></strong></p>
 		</div>
 		<div>
 			<ul class="image-grid">
-				{% for job in site.jobs limit: 1 %}
-					<li><a href="{{ site.baseurl }}{{ event.url }}"><img src="{% include relative-src.html src=event.image_path %}"></a></li>
+				{% assign jobs = site.jobs | reverse %}
+				{% for job in jobs limit: 1 %}
+					<li><a href="{{ site.baseurl }}{{ job.url }}"><img src="{% include relative-src.html src=job.image_path %}"></a></li>
 				{% endfor %}
 			</ul>
 		</div>

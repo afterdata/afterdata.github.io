@@ -7,9 +7,10 @@ subtitle: Espaço para divulgação de vagas.
 <section class="diagonal" style="background: #e9e9ea">
 	<div class="container">
 		<ul class="image-grid">
-			{% for job in site.jobs %}
+			{% assign jobs = site.jobs | reverse %}
+			{% for job in jobs %}
 				<li>
-					<a href="{{ site.baseurl }}{{ event.url }}">
+					<a href="{{ site.baseurl }}{{ job.url }}">
 						<img src="{% include relative-src.html src=job.image_path %}" alt="{{ job.name }}">
 						<div class="details">
 							<div class="name">{{ job.name }}</div>
