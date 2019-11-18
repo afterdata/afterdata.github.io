@@ -3,7 +3,7 @@ layout: default
 ---
 {% assign events = site.pages | where: "path", "events.html" | first %}
 
-<section class="hero diagonal">
+<section class="hero diagonal" style="background: #222">
 	<div class="container">
 		{% if events.heading %}
 		<h2><a href="{{ site.baseurl }}/events/">{{ events.heading }}</a> / {{ page.title | capitalize }}</h2>

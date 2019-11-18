@@ -23,7 +23,8 @@ title: Página Inicial
 		</div>
 		<div>
 			<ul class="image-grid">
-				{% for event in site.events limit: 1 %}
+				{% assign events = site.events | reverse %}
+				{% for event in events limit: 1 %}
 					<li><a href="{{ site.baseurl }}{{ event.url }}"><img src="{% include relative-src.html src=event.image_path %}"></a></li>
 				{% endfor %}
 			</ul>

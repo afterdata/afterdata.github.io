@@ -1,5 +1,4 @@
 ---
 title:
-categories:
-  - Hello World
+categories: example
 ---
