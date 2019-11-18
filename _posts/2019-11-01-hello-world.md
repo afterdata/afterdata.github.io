@@ -1,7 +1,6 @@
 ---
 title: print('Hello World!')
-categories:
-  - Hello World
+categories: hello-world
 ---
 
 Oiii pessoal, tudo bem?!
