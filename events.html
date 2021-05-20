@@ -1,13 +1,17 @@
 ---
 title: Eventos
 heading: Eventos
-subtitle: Participe da comunidade, aqui estaremos divulgando todos os nossos eventos.
+subtitle: Participe da comunidade, aqui estaremos divulgando todos os nossos eventos. Se você deseja palestrar nos próximos eventos <a src="https://github.com/afterdata/call4papers">clique aqui.</a>.
 ---
 
+
+<div>
+	<p>Se você deseja palestrar nos próximos eventos, <a src="#">clique aqui.</a></p>
+</div>
 <section class="diagonal" style="background: #e9e9ea">
 	<div class="container">
 		<ul class="image-grid">
-			{% assign events = site.events | reverse %}
+			{% assign events = site.events | sort: 'date' | reverse %}
 			{% for event in events %}
 				<li>
 					<a href="{{ site.baseurl }}{{ event.url }}">
