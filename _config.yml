@@ -1,5 +1,5 @@
 title: AfterData
-url: "https://afterdata.in"
+url: "https://afterdata.github.io"
 baseurl: ""
 google_analytics_key:
 google_maps_javascript_api_key:
@@ -11,7 +11,7 @@ description: Uma novo conceito de Data Science para o Norte Paranaense!
 # Author details for the jekyll-seo-tag gem
 author:
   name: After Data
-  email: contato@afterdata.in
+  email: endersonster@gmail.com
   twitter:
 
 # Social details for the jekyll-seo-tag gem
